@@ -36,6 +36,14 @@ require("lazy").setup({
     -- Add your copilot settings here
     { import = "plugins/copilot" },
     { import = "plugins/copilotchat" },
+
+    -- Import functional settings here
+    { import = "plugins/whichkey" }, -- Import whichkey
+    { import = "plugins/telescope" }, -- Fuzzy finder
+    { "neovim/nvim-lspconfig" }, -- LSP configuration
+    { "nvim-tree/nvim-web-devicons", opts = {} }, -- File icons
+    { "nvim-tree/nvim-tree.lua" }, -- File explorer
+    { "nvim-treesitter/nvim-treesitter", build=":TSUpdate" }, -- Syntax Highlighting
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
