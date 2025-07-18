@@ -423,16 +423,18 @@ return {
 
       -- Opening floating Window to Chat with Copilot "Space+ccv+Enter"
       ---- (normal mode)
-      vim.api.nvim_set_keymap(
+      -- vim.api.nvim_set_keymap(
+      vim.keymap.set(
         "n",
-        "<leader>ccv<cr>",
+        "<leader>ccv",
         ":CopilotChatVisual<cr>",
         { desc = "CopilotChat - Open in vertical split", noremap = true, silent = true }
       )
       ---- (visual mode)
-      vim.api.nvim_set_keymap(
+      -- vim.api.nvim_set_keymap(
+      vim.keymap.set(
         "x",
-        "<leader>ccv<cr>",
+        "<leader>ccv",
         ":CopilotChatVisual<cr>",
         { desc = "CopilotChat - Open in vertical split", noremap = true, silent = true }
       )

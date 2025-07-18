@@ -34,12 +34,15 @@ require("lazy").setup({
     -- { import = "theme.tokyonight" },    
     
     -- Add your copilot settings here
-    { import = "plugins/copilot" },
-    { import = "plugins/copilotchat" },
+    -- { import = "plugins/copilot" },
+    { import = "plugins/copilot-vim" },
+    -- { import = "plugins/copilotchat" },
+    { import = "plugins/copilotchat-v2" },
 
     -- Import functional settings here
     { import = "plugins/whichkey" }, -- Import whichkey
     { import = "plugins/telescope" }, -- Fuzzy finder
+    { import = "plugins/nvim-dap" }, -- Debugging Support
     { "neovim/nvim-lspconfig" }, -- LSP configuration
     { "nvim-tree/nvim-web-devicons", opts = {} }, -- File icons
     { "nvim-tree/nvim-tree.lua" }, -- File explorer
